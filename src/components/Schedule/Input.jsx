@@ -51,21 +51,27 @@ class Input extends Component {
           <div className="col-sm-2">
             <select className="form-select" aria-label="Hora" name="horario">
               <option selected>Elige un horario</option>
-              <option value="1">7:00 - 7:50</option>
-              <option value="2">8:00 - 8:50</option>
-              <option value="3">9:00 - 9:50</option>
-              <option value="4">10:00 - 10:50</option>
-              <option value="5">11:00 - 11:50</option>
-              <option value="6">12:00 - 12:50</option>
-              <option value="7">13:00 - 13:50</option>
-              <option value="8">14:00 - 14:50</option>
-              <option value="9">15:00 - 15:50</option>
-              <option value="10">16:00 - 16:50</option>
-              <option value="11">17:00 - 17:50</option>
-              <option value="12">18:00 - 18:50</option>
-              <option value="13">19:00 - 19:50</option>
-              <option value="14">20:00 - 20:50</option>
-              <option value="15">21:00 - 21:50</option>
+              <option value="1">07:00 - 07:30</option>
+              <option value="2">07:30 - 08:00</option>
+              <option value="3">08:00 - 08:30</option>
+              <option value="4">08:30 - 09:00</option>
+              <option value="5">09:00 - 09:30</option>
+              <option value="6">09:30 - 10:00</option>
+              <option value="7">10:00 - 10:30</option>
+              <option value="8">10:30 - 11:00</option>
+              <option value="9">11:00 - 11:30</option>
+              <option value="10">11:30 - 12:00</option>
+              <option value="11">12:00 - 12:30</option>
+              <option value="12">12:30 - 13:00</option>
+              <option value="13">13:00 - 13:30</option>
+              <option value="14">13:30 - 14:00</option>
+              <option value="15">14:00 - 14:30</option>
+              <option value="15">14:30 - 15:00</option>
+              <option value="15">15:00 - 15:30</option>
+              <option value="15">15:30 - 16:00</option>
+              <option value="15">16:00 - 16:30</option>
+              <option value="15">16:30 - 17:00</option>
+
 
             </select>
           </div>
