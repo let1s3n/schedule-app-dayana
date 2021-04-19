@@ -66,11 +66,11 @@ class Input extends Component {
               <option value="13">13:00 - 13:30</option>
               <option value="14">13:30 - 14:00</option>
               <option value="15">14:00 - 14:30</option>
-              <option value="15">14:30 - 15:00</option>
-              <option value="15">15:00 - 15:30</option>
-              <option value="15">15:30 - 16:00</option>
-              <option value="15">16:00 - 16:30</option>
-              <option value="15">16:30 - 17:00</option>
+              <option value="16">14:30 - 15:00</option>
+              <option value="17">15:00 - 15:30</option>
+              <option value="18">15:30 - 16:00</option>
+              <option value="19">16:00 - 16:30</option>
+              <option value="20">16:30 - 17:00</option>
 
 
             </select>
