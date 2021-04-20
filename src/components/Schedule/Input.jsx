@@ -1,5 +1,7 @@
+import {exportComponentAsPNG } from 'react-component-export-image';
 import React, { Component } from "react";
 import Schedule from './Schedule'
+
 
 class Input extends Component {
   constructor(props) {
@@ -9,6 +11,7 @@ class Input extends Component {
       dia: '',
       horario: ''
     }
+    this.componentRef = React.createRef();
   }
 
 
@@ -17,7 +20,7 @@ class Input extends Component {
     const dia = document.getElementsByName('dia')[0].value;
     const horario = document.getElementsByName('horario')[0].value;
 
-  
+
 
     this.setState({
       curso,
@@ -25,9 +28,10 @@ class Input extends Component {
       horario
     });
   }
-
-
+  
   render() {
+
+
     return (
       <div className="container-sm mx-auto overflow-auto">
 
@@ -76,10 +80,16 @@ class Input extends Component {
             </select>
           </div>
           <div className="col-sm-2">
-            <input className="btn btn-secondary" type="submit" value="Submit" onClick={this.handleSubmit}/>
+            <input className="btn btn-secondary" type="submit" value="Agregar" onClick={this.handleSubmit} />
+          </div>
+
+          <div className="col-sm-2">
+            <input className="btn btn-secondary" type="button" value="Guardar como imagen" onClick={() => exportComponentAsPNG(this.componentRef,{fileName:'horario',html2CanvasOptions:{
+              background:undefined
+            }})} />
           </div>
         </div>
-        <Schedule data={this.state}/>
+        <Schedule ref={this.componentRef} data={this.state} />
       </div>
     );
   }
